@@ -1,0 +1,59 @@
+.roleta {
+  max-width: 500px;
+  margin: 60px auto;
+  display: block;
+  transition: 4s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.roleta-container {
+  position: relative;
+}
+
+.roleta-container::after {
+  content: "";
+  background-color: #414042;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  z-index: 1000;
+  width: 60px;
+  height: 100px;
+  position: absolute;
+  top: 140px;
+  left: 400px;
+  display: block;
+}
+
+.btn {
+  padding: 12px 48px;
+  width: 320px;
+  background: green;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 32px auto;
+  display: block;
+  transition: 3s;
+}
+
+.btn-inativo {
+  background: #414042;
+}
+
+/* R$20 */
+.giro1 {
+  rotate: 960deg;
+}
+
+/* R$1111 */
+.giro2 {
+  rotate: 1890deg;
+}
+
+/* R$50 */
+.giro3 {
+  rotate: 2730deg;
+}
+
+/* R$600 */
+.giro4 {
+  rotate: 3240deg;
+}
