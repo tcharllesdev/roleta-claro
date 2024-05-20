@@ -23,6 +23,10 @@ body {
   padding: 0 20px 60px 0;
 }
 
+.r {
+  color: #ff1a23;
+}
+
 @media (max-width: 450px) {
   .container {
     padding: 0 8px;

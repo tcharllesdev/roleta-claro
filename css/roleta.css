@@ -2,7 +2,7 @@
   display: block;
   max-width: 240px;
   margin: 0px auto;
-  padding: 40px 0 40px 0;
+  padding: 40px 0;
 }
 
 .h1-texto h1 {
@@ -93,9 +93,6 @@
   rotate: 3240deg;
 }
 
-.r {
-  color: #ff1a23;
-}
 @media (max-width: 450px) {
   .h1-texto h1 {
     font-size: 1.25rem;
