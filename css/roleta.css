@@ -1,8 +1,8 @@
 .logo {
   display: block;
-  max-width: 320px;
+  max-width: 240px;
   margin: 0px auto;
-  padding: 40px 0 20px 0;
+  padding: 40px 0 40px 0;
 }
 
 .h1-texto h1 {
@@ -19,7 +19,7 @@
   margin: 0 auto 32px auto;
   color: #ededed;
   display: block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -31,7 +31,6 @@
 }
 
 .roleta-container {
-  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +41,7 @@
 .roleta {
   display: block;
   transition: 6s cubic-bezier(0.33, 1, 0.68, 1);
-  max-width: 460px;
+  max-width: 440px;
 }
 
 .roleta-img-container {
@@ -98,9 +97,6 @@
   color: #ff1a23;
 }
 @media (max-width: 450px) {
-  .logo {
-    max-width: 240px;
-  }
   .h1-texto h1 {
     font-size: 1.25rem;
   }
