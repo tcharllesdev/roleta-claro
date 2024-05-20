@@ -1,11 +1,8 @@
-.main-container {
-  position: relative;
-}
-
 .logo {
   display: block;
   max-width: 320px;
-  margin: 40px auto;
+  margin: 0px auto;
+  padding: 40px 0 20px 0;
 }
 
 .h1-texto h1 {
@@ -14,7 +11,7 @@
   text-transform: uppercase;
   max-width: 560px;
   font-size: 1.5rem;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 12px auto;
 }
 
 .h1-texto h2 {
@@ -101,6 +98,12 @@
   color: #ff1a23;
 }
 @media (max-width: 450px) {
+  .h1-texto h1 {
+    font-size: 1.25rem;
+  }
+  .h1-texto h2 {
+    font-size: 1.75rem;
+  }
   .roleta {
     max-width: 360px;
   }
