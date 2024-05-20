@@ -94,6 +94,10 @@
 }
 
 @media (max-width: 450px) {
+  .logo {
+    max-width: 160px;
+    padding: 32px 0;
+  }
   .h1-texto h1 {
     font-size: 1.25rem;
   }
