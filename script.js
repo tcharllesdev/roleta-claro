@@ -20,5 +20,5 @@ btn.addEventListener("click", () => {
   setTimeout(() => {
     popup.style.display = "flex";
     rouletteSuccess.play();
-  }, 12500);
+  }, 14500);
 });

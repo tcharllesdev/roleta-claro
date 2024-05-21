@@ -46,6 +46,7 @@
 
 .roleta-img-container {
   position: relative;
+  overflow-y: hidden;
 }
 
 .roleta-img-container::after {
