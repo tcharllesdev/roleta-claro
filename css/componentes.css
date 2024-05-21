@@ -14,6 +14,9 @@ a {
 
 body {
   background-color: #0b141c;
+  background-image: url("../img/bg.webp");
+  background-position: top center;
+  background-repeat: no-repeat;
   font-family: "Saira", sans-serif;
   min-height: 100vh;
 }
@@ -28,6 +31,9 @@ body {
 }
 
 @media (max-width: 450px) {
+  body {
+    background-position: bottom;
+  }
   .container {
     padding: 0 8px;
   }

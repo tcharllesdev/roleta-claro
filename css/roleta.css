@@ -40,7 +40,7 @@
 
 .roleta {
   display: block;
-  transition: 6s cubic-bezier(0.33, 1, 0.68, 1);
+  transition: 12s cubic-bezier(0.33, 1, 0.68, 1);
   max-width: 440px;
 }
 
@@ -50,7 +50,7 @@
 
 .roleta-img-container::after {
   content: "";
-  background-color: green;
+  background-color: #02fb04;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   width: 34px;
   height: 21px;
@@ -62,7 +62,7 @@
 
 .roleta-img-container::before {
   content: "";
-  background-color: green;
+  background: linear-gradient(180deg, #00ff04 0%, #008002 103.57%);
   border-radius: 50%;
   width: 60px;
   height: 60px;
