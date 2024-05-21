@@ -24,10 +24,37 @@
 }
 
 .h1-texto p {
-  margin: 0 auto 60px auto;
+  margin: 0 auto 20px auto;
   text-align: center;
   font-size: 1.5rem;
-  color: #fff;
+  font-weight: 600;
+  color: #ededed;
+  -webkit-animation: blink-2 0.9s infinite both;
+  animation: blink-2 0.9s infinite both;
+  display: none;
+}
+
+@-webkit-keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink-2 {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .roleta-container {
@@ -74,22 +101,18 @@
   z-index: 1000;
 }
 
-/* R$20 */
 .giro1 {
-  rotate: 940deg;
+  rotate: 2070deg;
 }
-
-/* R$1111 */
+/*1930deg*/
 .giro2 {
-  rotate: 1890deg;
+  rotate: 4090deg;
 }
 
-/* R$50 */
 .giro3 {
   rotate: 2730deg;
 }
 
-/* R$600 */
 .giro4 {
   rotate: 3240deg;
 }

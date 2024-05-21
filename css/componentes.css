@@ -28,7 +28,7 @@ body {
 }
 
 .r {
-  color: #ff1a23;
+  color: #ff1a23 !important;
 }
 
 @media (max-width: 450px) {
@@ -50,6 +50,7 @@ body {
   margin: 32px auto 0 auto;
   display: block;
   transition: 3s;
+  text-align: center;
   z-index: 1000;
   border: none;
   color: #121212;
