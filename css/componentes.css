@@ -33,7 +33,8 @@ body {
 
 @media (max-width: 450px) {
   body {
-    background-position: bottom;
+    background-image: url("../img/bg-mobile.webp");
+    background-position: left;
   }
   .container {
     padding: 0 8px;
