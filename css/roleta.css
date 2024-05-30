@@ -14,14 +14,14 @@
   margin: 0 auto 12px auto;
 }
 
-.h1-texto h2 {
+/* .h1-texto h2 {
   text-align: center;
   margin: 0 auto 32px auto;
   color: #ededed;
   display: block;
   font-size: 2rem;
   text-transform: uppercase;
-}
+} */
 
 .h1-texto p {
   margin: 0 auto 20px auto;
@@ -55,6 +55,56 @@
   100% {
     opacity: 1;
   }
+}
+
+.steps-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 60px;
+  margin: 40px auto;
+}
+
+.steps-box li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  width: 133px;
+}
+
+.steps-box::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 12px;
+  display: block;
+  background-color: #ededed;
+  top: 25%;
+  left: 32%;
+  z-index: -1000;
+}
+.steps {
+  background-color: #ededed;
+  display: block;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: inherit;
+  text-align: center;
+}
+
+.steps-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ededed;
+  max-width: 10ch;
+  line-height: 1.2em;
+  text-align: center;
+  overflow-y: hidden;
 }
 
 .roleta-container {
@@ -117,18 +167,55 @@
   rotate: 3240deg;
 }
 
+@media (max-width: 1280px) {
+  .steps-box::after {
+    width: 370px;
+    top: 25%;
+    left: 32%;
+  }
+}
+
+@media (max-width: 800px) {
+  .steps-box::after {
+    width: 390px;
+    top: 25%;
+    left: 22%;
+  }
+}
 @media (max-width: 450px) {
   .logo {
     max-width: 160px;
     padding: 32px 0;
   }
   .h1-texto h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
-  .h1-texto h2 {
+  /* .h1-texto h2 {
     font-size: 1.75rem;
     margin-bottom: 20px;
+  } */
+  .steps {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    line-height: 2em;
   }
+  .steps-box {
+    gap: 24px;
+    margin: 20px auto;
+  }
+  .steps-box::after {
+    width: 280px;
+    top: 20%;
+    left: 12%;
+  }
+  .steps-box li {
+    gap: 12px;
+  }
+  .steps-text {
+    font-size: 1rem;
+  }
+
   .roleta {
     max-width: 320px;
   }
@@ -151,5 +238,13 @@
   }
   .roleta-img-container::after {
     right: 45%;
+  }
+}
+
+@media (max-width: 320px) {
+  .steps-box::after {
+    width: 220px;
+    top: 20%;
+    left: 8%;
   }
 }
