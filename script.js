@@ -7,6 +7,7 @@ const notification = document.getElementById("notification");
 const aviso1 = document.querySelector(".aviso1");
 const aviso2 = document.querySelector(".aviso2");
 const warning = document.querySelector(".warning");
+const todosElementos = document.querySelectorAll("*");
 
 function removerGiroClasses() {
   roleta.classList.remove("giro1", "giro2", "giro3", "giro4");
@@ -28,14 +29,19 @@ btn.addEventListener("click", () => {
     warning.classList.add("ativo");
     aviso1.classList.add("aviso-ativo");
     notification.play();
+
     setTimeout(() => {
       aviso2.classList.add("aviso-ativo");
       notification.play();
-    }, 3000);
+    }, 4000);
     rouletteAudio.play();
+
     setTimeout(() => {
       popup.style.display = "flex";
       rouletteSuccess.play();
+      todosElementos.forEach((element) => {
+        element.style.overflowY = "hidden";
+      });
     }, 12500);
   }, 13000);
 
