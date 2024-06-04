@@ -34,15 +34,14 @@ btn.addEventListener("click", () => {
       aviso2.classList.add("aviso-ativo");
       notification.play();
     }, 2000);
-    rouletteAudio.play();
-
+    
     setTimeout(() => {
       popup.style.display = "flex";
       rouletteSuccess.play();
       todosElementos.forEach((element) => {
         element.style.overflowY = "hidden";
       });
-    }, 12500);
+    }, 13500);
   }, 13000);
 
   // setTimeout(() => {

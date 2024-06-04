@@ -1,0 +1,23 @@
+.footer {
+  margin-top: 240px;
+}
+
+.footer-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #6a6a6a;
+}
+
+.footer-text {
+  color: #6a6a6a;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 460px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
