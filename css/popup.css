@@ -1,7 +1,7 @@
 .popup {
   position: absolute;
   top: 0;
-  height: 120vh;
+  height: 106vh;
   width: 100vw;
   background-color: black;
   z-index: 2000;

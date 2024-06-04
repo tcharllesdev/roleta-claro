@@ -33,7 +33,7 @@ btn.addEventListener("click", () => {
     setTimeout(() => {
       aviso2.classList.add("aviso-ativo");
       notification.play();
-    }, 4000);
+    }, 2000);
     rouletteAudio.play();
 
     setTimeout(() => {
