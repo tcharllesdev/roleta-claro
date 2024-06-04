@@ -14,24 +14,39 @@
   margin: 0 auto 12px auto;
 }
 
-/* .h1-texto h2 {
-  text-align: center;
-  margin: 0 auto 32px auto;
-  color: #ededed;
-  display: block;
-  font-size: 2rem;
-  text-transform: uppercase;
-} */
-
-.h1-texto p {
+.warning p {
   margin: 0 auto 20px auto;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
   color: #ededed;
+}
+
+.warning {
+  max-height: 0;
+}
+
+.warning.ativo {
+  max-height: initial;
+}
+
+.aviso1,
+.aviso2 {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 1s ease, max-height 1s ease;
+}
+
+.aviso-ativo {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.aviso2 {
   -webkit-animation: blink-2 0.9s infinite both;
   animation: blink-2 0.9s infinite both;
-  display: none;
 }
 
 @-webkit-keyframes blink-2 {

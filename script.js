@@ -3,7 +3,10 @@ const roleta = document.querySelector(".roleta");
 const popup = document.querySelector(".popup");
 const rouletteAudio = document.getElementById("rouletteAudio");
 const rouletteSuccess = document.getElementById("rouletteSuccess");
-const aviso = document.querySelector(".warning");
+const notification = document.getElementById("notification");
+const aviso1 = document.querySelector(".aviso1");
+const aviso2 = document.querySelector(".aviso2");
+const warning = document.querySelector(".warning");
 
 function removerGiroClasses() {
   roleta.classList.remove("giro1", "giro2", "giro3", "giro4");
@@ -17,11 +20,18 @@ btn.addEventListener("click", () => {
   btn.style.display = "none";
   roleta.classList.add("giro1");
   rouletteAudio.play();
-  aviso.style.display = "block";
 
   setTimeout(() => {
     removerGiroClasses();
     roleta.classList.add("giro2");
+    rouletteAudio.play();
+    warning.classList.add("ativo");
+    aviso1.classList.add("aviso-ativo");
+    notification.play();
+    setTimeout(() => {
+      aviso2.classList.add("aviso-ativo");
+      notification.play();
+    }, 3000);
     rouletteAudio.play();
     setTimeout(() => {
       popup.style.display = "flex";
